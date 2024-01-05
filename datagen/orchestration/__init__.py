@@ -1,0 +1,1 @@
+from clean_embed_push_qdrant import embed_news_into_qdrant

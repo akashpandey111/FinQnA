@@ -1,1 +1,3 @@
-Initial commit
+The **datagen** module is intended to be used as a separate service responsible for fetching the past six months of financial news from the [Alpaca financial news API](https://alpaca.markets/docs/api-documentation/market-data/alpaca-data-api-v2/news/), clean it, divide it into chunks, create the respective token embeddings, and push them to a Vector DB collection in [QDRANT](https://qdrant.io/).
+
+Downloading of the financial news, logging, creating a client connection for QDRANT, and instantiating the all-MiniLM-L6-V2 model/tokenizer are done in separate scripts, which are tied together in the orchestration package and the Airflow DAG.
